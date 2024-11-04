@@ -1,0 +1,197 @@
+/* General Reset for Margin and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+/* User List Styles */
+.user-list {
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.user-list h1 {
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.user-list ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.user-list li {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    border-bottom: 1px solid #eee; 
+}
+
+.user-list a {
+    text-decoration: none; 
+    color: #007bff; 
+}
+
+.user-list button {
+    background-color: #dc3545; /* Red for delete */
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.user-list button:hover {
+    background-color: #c82333; 
+}
+
+/* User Form Styles */
+.user-form {
+    max-width: 500px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.user-form h1 {
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.user-form div {
+    margin-bottom: 15px; 
+}
+
+.user-form label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #555; 
+}
+
+.user-form input,
+.user-form select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    transition: border-color 0.3s; 
+}
+
+.user-form input:focus,
+.user-form select:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+.user-form div.error {
+    color: red; 
+    font-size: 12px; 
+    margin-top: 5px; 
+}
+
+.user-form button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px; 
+    width: 100%; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.user-form button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+/* User Detail Styles */
+.user-detail {
+    max-width: 600px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.user-detail h1 {
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.user-detail p {
+    font-size: 16px; 
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
+.user-detail a {
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.user-detail a:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .user-list, .user-form, .user-detail {
+        margin: 20px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .user-list li {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; 
+    }
+
+    .user-list button {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 10px; 
+    }
+
+    .user-detail h1 {
+        font-size: 24px; /* Slightly smaller on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-list, .user-form, .user-detail {
+        padding: 10px; /* Further adjust padding */
+    }
+
+    .user-list h1, .user-form h1, .user-detail h1 {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .user-form button, .user-detail a {
+        padding: 8px; /* Smaller button padding */
+    }
+}
