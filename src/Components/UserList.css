@@ -79,3 +79,49 @@
     margin: 0 10px;
   }
   
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .user-list-container {
+    padding: 5px;
+  }
+
+  .user-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-list-item div {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .button {
+    padding: 6px 10px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-list-container {
+    padding: 5px;
+  }
+
+  .user-list-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+  }
+}
